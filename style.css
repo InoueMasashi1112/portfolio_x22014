@@ -1,0 +1,369 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, 'BIZ UDGothic', "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-feature-settings: "palt";
+    line-height: 1.125;
+    font-size: 16px;
+  }
+  
+  /* 幅の狭いコンテンツエリアを以下のクラスで指定しておくことで調整しやすくする */
+  .container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  
+
+
+
+  
+  /* 私達について(.about) */
+  .profile {
+    padding: 150px 0;
+  }
+  .profile h3 {
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: left; /* 中央寄せを左寄せに変更 */
+    margin-left: 40px; /* 左側に少し空間を追加 */
+    margin-bottom: 20px;
+    border-bottom: 2px solid black; /* 下に線を引く */
+    padding-bottom: 10px; /* テキストと線の間にスペースを追加 */
+    display: inline-block; /* 要素の幅をコンテンツに合わせる */
+    width: 300px; /* 線の長さを調整 */
+}
+  .profile .profile {
+    display: flex;
+  }
+  .profile .profile .profile-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    margin-bottom: 10px; /* ここで間隔を調整 */
+    margin-top: 15px;
+  }
+  .profile .profile .profile-texts p {
+    font-size: 2rem;
+    line-height: 3;
+    flex: 1;
+    margin-left: 40px;
+  }
+  .profile .profile .profile-images {
+    flex: 1;
+  }
+  .profile .profile .profile-images img {
+    width: 100%;
+    max-width: 80%;
+    height: 380px;
+    object-fit: cover;
+    margin-left: 50px;
+  }
+  .profile .profile .profile-images {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  .service {
+    padding: 150px 0;
+    background-color: rgba(0, 0, 0, 0.025);
+  }
+
+  .service h3 {
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: left; /* 中央寄せを左寄せに変更 */
+    margin-left: 40px; /* 左側に少し空間を追加 */
+    margin-bottom: 20px;
+    border-bottom: 2px solid black; /* 下に線を引く */
+    padding-bottom: 10px; /* テキストと線の間にスペースを追加 */
+    display: inline-block; /* 要素の幅をコンテンツに合わせる */
+    width: 200px; /* 線の長さを調整 */
+}
+  
+
+
+  .service small {
+    display: block;
+    width: 500px; /* 幅を100pxに設定 */
+    font-size: 1.5rem;
+    margin-bottom: 100px; /* 下部の余白を設定 */
+    text-align: left; /* テキストを左寄せにする */
+    padding-left: 150px; /* テキストを左に動かす */
+    background-size: auto auto;
+   
+  }
+  
+  .service .service-item-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px; /* 左側に余白を設定 */
+    padding-right: 30px; /* 右側に余白を設定 */
+    
+  }
+  .service .service-item-container .service-item {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 30;
+    
+  }
+  .service .service-item-container h6{
+    font-size: 2rem;
+    color: #ffd610;
+    text-align: right;
+}
+  .service .icon-container .service-icon1 {
+    display: inline-block;
+    width: 200px;
+    height: 140px;
+    background-color: #bbb;
+    background-size: cover; /* 画像を要素に合わせてカバーする */
+    background-position: center; /* 画像を中央に配置する */
+    background-image: url('photo.jpg'); /* 画像のURLを指定 */
+    margin: 2rem 0 4rem;
+  }
+
+  .service .icon-container .service-icon2 {
+    display: inline-block;
+    width: 200px;
+    height: 140px;
+    background-color: #bbb;
+    background-size: cover; /* 画像を要素に合わせてカバーする */
+    background-position: center; /* 画像を中央に配置する */
+    background-image: url('photo2.png'); /* 画像のURLを指定 */
+    margin: 2rem 0 4rem;
+  }
+
+  .service .icon-container .service-icon3 {
+    display: inline-block;
+    width: 200px;
+    height: 140px;
+    background-color: #bbb;
+    background-size: cover; /* 画像を要素に合わせてカバーする */
+    background-position: center; /* 画像を中央に配置する */
+    background-image: url('photo1.jpg'); /* 画像のURLを指定 */
+    margin: 2rem 0 4rem;
+  }
+  
+  .service .service-sub .service-item-container .service-item h4 {
+    font-size: 1.5rem;
+    background-color: #ffd610;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: left;
+  }
+  .service .service-sub .service-item-container .service-item p {
+    padding-top: 10px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  .service .service-main .service-item-container .service-item{
+    width: 49.5%;
+    max-width: 49.5%;
+    margin-bottom: 1rem;
+  }
+  .service .service-sub .service-item-container .service-item {
+    width: 32.5%;
+    max-width: 32.5%;
+  }
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .sakuhin {
+    padding: 100px 0;
+  }
+  .sakuhin h3 {
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: left; /* 中央寄せを左寄せに変更 */
+    margin-left: 30px; /* 左側に少し空間を追加 */
+    margin-bottom: 20px;
+    border-bottom: 2px solid black; /* 下に線を引く */
+    padding-bottom: 10px; /* テキストと線の間にスペースを追加 */
+    display: inline-block; /* 要素の幅をコンテンツに合わせる */
+    width: 300px; /* 線の長さを調整 */
+}
+  .sakuhin .sakuhin {
+    display: flex;
+  }
+  .sakuhin .sakuhin .sakuhin-texts h1 {
+    font-size: 2rem;
+    line-height: 2;
+    flex: 1;
+  }
+  .sakuhin .sakuhin .sakuhin-texts p {
+    font-size: 2rem;
+    line-height: 2;
+    flex: 1;
+  }
+  .sakuhin .sakuhin .sakuhin-images {
+    flex: 1;
+  }
+
+
+  .sakuhin2 {
+    padding: 100px 0;
+  }
+  .sakuhin h3 {
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: left; /* 中央寄せを左寄せに変更 */
+    margin-left: 30px; /* 左側に少し空間を追加 */
+    margin-bottom: 20px;
+    border-bottom: 2px solid black; /* 下に線を引く */
+    padding-bottom: 10px; /* テキストと線の間にスペースを追加 */
+    display: inline-block; /* 要素の幅をコンテンツに合わせる */
+    width: 300px; /* 線の長さを調整 */
+}
+  .sakuhin .sakuhin {
+    display: flex;
+  }
+  .sakuhin .sakuhin .sakuhin-texts h1 {
+    font-size: 2rem;
+    line-height: 2;
+    flex: 1;
+  }
+  .sakuhin .sakuhin .sakuhin-texts p {
+    font-size: 2rem;
+    line-height: 2;
+    flex: 1;
+  }
+  .sakuhin .sakuhin .sakuhin-images {
+    flex: 1;
+  }
+  
+  .sakuhin .sakuhin .sakuhin-images {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sakuhin .sakuhin .sakuhin-images img {
+    width: 33%;
+    max-width: 33%;
+    height: 240px;
+    object-fit: cover;
+  }
+
+
+
+
+  .sakuhin2 {
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.025);
+  }
+  .sakuhin2 h3 {
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: left; /* 中央寄せを左寄せに変更 */
+    margin-left: 30px; /* 左側に少し空間を追加 */
+    margin-bottom: 20px;
+    border-bottom: 2px solid black; /* 下に線を引く */
+    padding-bottom: 10px; /* テキストと線の間にスペースを追加 */
+    display: inline-block; /* 要素の幅をコンテンツに合わせる */
+    width: 300px; /* 線の長さを調整 */
+}
+  .sakuhin2 .sakuhin {
+    display: flex;
+  }
+  .sakuhin2 .sakuhin .sakuhin-texts h1 {
+    font-size: 2rem;
+    line-height: 2;
+    flex: 1;
+  }
+  .sakuhin2 .sakuhin .sakuhin-texts p {
+    font-size: 2rem;
+    line-height: 2;
+    flex: 1;
+  }
+  .sakuhin2 .sakuhin .sakuhin-images {
+    flex: 1;
+  }
+
+  .sakuhin2 {
+    padding: 100px 0;
+  }
+  .sakuhin2 h3 {
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: left; /* 中央寄せを左寄せに変更 */
+    margin-left: 30px; /* 左側に少し空間を追加 */
+    margin-bottom: 20px;
+    border-bottom: 2px solid black; /* 下に線を引く */
+    padding-bottom: 10px; /* テキストと線の間にスペースを追加 */
+    display: inline-block; /* 要素の幅をコンテンツに合わせる */
+    width: 300px; /* 線の長さを調整 */
+}
+  .sakuhin2 .sakuhin {
+    display: flex;
+  }
+  .sakuhin2 .sakuhin .sakuhin-texts h1 {
+    font-size: 2rem;
+    line-height: 2;
+    flex: 1;
+  }
+  .sakuhin2 .sakuhin .sakuhin-texts p {
+    font-size: 2rem;
+    line-height: 2;
+    flex: 1;
+  }
+  .sakuhin2 .sakuhin .sakuhin-images {
+    flex: 1;
+  }
+  .sakuhin2 .sakuhin .sakuhin-images {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sakuhin2 .sakuhin .sakuhin-images img {
+    width: 33%;
+    max-width: 33%;
+    height: 240px;
+    object-fit: cover;
+  }
+
+ 
+
+
+
+
+
